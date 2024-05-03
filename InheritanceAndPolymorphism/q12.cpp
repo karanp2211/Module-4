@@ -6,16 +6,17 @@ private:
 int num1,num2;
 public:
 Swapp(int num1,int num2){
-    this->num1=num2;
-    this->num2=num1;
+    this->num1=num1;
+    this->num2=num2;
 }
 friend int swapping (Swapp &sw);
 };
 int swapping (Swapp &sw){
-    cout<<"values after swapping:"<<sw.num1<<"\t"<<sw.num2<<endl;
+    
     sw.num1=sw.num1+sw.num2;
     sw.num2=sw.num1-sw.num2;
     sw.num1=sw.num1-sw.num2;
+    cout<<"values after swapping:"<<sw.num1<<"\t"<<sw.num2<<endl;
 }
 int main (){
     int num1,num2;
